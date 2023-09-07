@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import variables from './variables.module.scss'
-import Something from '@/app/button'
+import { Something }from '@/app/button'
 
 export default function Home() {
   return (
