@@ -1,9 +1,9 @@
 
-import BtnStyles from "./button.module.scss"
+import BtnStyles from "@/components/button.module.scss"
   
-export function Something() {
+export function SomeButtons() {
     return (
-        <div className="min-h-screen flex flex-row justify-center items-center gap-4">
+        <div className="flex flex-row justify-center items-center gap-4">
             <button className={BtnStyles.primary}>Primary</button>
             <button className={BtnStyles.error}>Error</button>
         </div>
