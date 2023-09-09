@@ -16,7 +16,7 @@ const Statistics = () => {
         <>
         { stats.map((item) => (
             <div key={item.viewId} className="p-4 sm:w-1/4 w-1/2">
-                <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">{item.amount}</h2>
+                <h2 className=" text-pink-500 title-font font-medium sm:text-4xl text-3xl text-gray-900">{item.amount}</h2>
                 <p className="leading-relaxed">{item.title}</p>
             </div>
         ))}
@@ -26,9 +26,9 @@ const Statistics = () => {
 
 export function StatisticsContainer(){
     return (
-        <div className="text-gray-600 body-font bg-pink-200 py-10">
+        <div className="text-gray-600 body-font bg-pink-100 py-10">
             <div className="container px-5 py-2 mx-auto">
-                <div className="flex flex-wrap -m-4 text-center">
+                <div className="flex flex-wrap -m-4 text-center text-pink-500">
                     <Statistics />
                 </div>
             </div>
@@ -102,7 +102,6 @@ export function Services(){
         </div>
       </div>
     </div>
-    <button className="flex mx-auto mt-16 text-white bg-pink-500 border-0 py-2 px-8 focus:outline-none hover:bg-pink-600 rounded text-lg">Button</button>
   </div>
 </div>
 </>

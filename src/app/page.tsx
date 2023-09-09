@@ -18,7 +18,7 @@ export default function Page() {
       <SomeButtons /> */}
 
       { navigation.map((item) => (
-          <MyCustomSection key={item.name} id={item.id} className={' h-[calc(100vh-74px)] w-screen pt-20'}>
+          <MyCustomSection key={item.name} id={item.id} className={' min-h-[calc(100vh-74px)] w-screen pt-20'}>
             {item.name}
             {componentMap.get(item.name)}
           </MyCustomSection>
