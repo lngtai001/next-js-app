@@ -37,15 +37,16 @@ function LinkedInSVG() {
 }
 
 const svgArray = [FacebookSVG, TwitterSVG ,InstagramSVG, LinkedInSVG]
-interface SocialMediaProps {
-    children: React.ReactNode;
-}
 
-const SocialMedia : React.FC<SocialMediaProps> = ({children}) => {
+const SocialMedia = () => {
     return (
-        <Link className="ml-3 text-gray-500" href={""}>
-            { children }
-        </Link>
+        <>
+        { svgArray.map((item) => (
+            <Link key="item" className="ml-3 text-gray-500" href={""}>
+                { item() }
+            </Link>
+        ))}
+        </>
     )
 }
 
@@ -56,11 +57,7 @@ function Bottom() {
                 <Logo />
                 <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2019 Acme — All rights reserved.</p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                { svgArray.map((item) => (
-                <SocialMedia key="item" >
-                    { item() }
-                </SocialMedia>
-                ))}
+                <SocialMedia />
                 </span>
             </div>
         </div>
