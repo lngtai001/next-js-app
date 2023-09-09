@@ -7,7 +7,7 @@ import { NavBar } from "@/components/nav"
 
 export function Header() {
 return (
-    <header className="fixed bg-white inset-x-0 top-0 z-50 text-gray-600 body-font">
+    <header className="fixed bg-pink-50 bg-opacity-90 inset-x-0 top-0 z-50 text-gray-600 body-font">
         {/* <div>Company name / logo should go here </div> */}
     <NavBar />
           <div
