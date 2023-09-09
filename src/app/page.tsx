@@ -4,20 +4,23 @@ import { SomeButtons }from '@/components/button'
 // import { Home } from '@/components/home'
 // import { About } from '@/components/about'
 // import { Services } from '@/components/services'
-import { navigation } from '@/app/models/navigation'
 import { MyCustomSection } from '@/components/section'
 import MainStyles from '@/app/page.module.scss'
+import { HOME_KEY, componentMap, navigation } from '@/app/models/navigation'
+import { Home } from '@/components/home'
+
+
 
 export default function Page() {
   return (
     <main className={MainStyles.main}>
       {/* <h1 style={{ color: variables.primaryColor }} className='text-lg'>Hello, Next.js!</h1>
       <SomeButtons /> */}
-     
 
       { navigation.map((item) => (
-          <MyCustomSection key={item.name} id={item.id} className={' h-[calc(100vh-74px)] w-screen bg-blue-200 pt-20'}>
+          <MyCustomSection key={item.name} id={item.id} className={' h-[calc(100vh-74px)] w-screen bg-gray-200 pt-20'}>
             {item.name}
+            {componentMap.get(item.name)}
           </MyCustomSection>
         ))}
       {/* <Home />
