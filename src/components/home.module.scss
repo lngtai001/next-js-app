@@ -1,0 +1,5 @@
+.jumbotron{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @apply py-24 px-6 text-right bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+}
