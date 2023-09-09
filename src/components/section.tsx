@@ -5,7 +5,7 @@ interface Props {
   }
 
 export const MyCustomSection: React.FC<Props> = ({id, className, children}) => (
-   <section id={id} className={className}> 
+    <section id={id} className={className}> 
         { children }
-     </section>
-  );
+    </section>
+    );
