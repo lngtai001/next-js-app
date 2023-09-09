@@ -1,15 +1,8 @@
-import Image from 'next/image'
 import variables from './variables.module.scss'
 import { SomeButtons }from '@/components/button'
-// import { Home } from '@/components/home'
-// import { About } from '@/components/about'
-// import { Services } from '@/components/services'
 import { MyCustomSection } from '@/components/section'
 import MainStyles from '@/app/page.module.scss'
-import { HOME_KEY, componentMap, navigation } from '@/app/models/navigation'
-import { Home } from '@/components/home'
-
-
+import { componentMap, navigation } from '@/app/models/navigation'
 
 export default function Page() {
   return (
