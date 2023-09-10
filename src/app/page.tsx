@@ -12,13 +12,9 @@ export default function Page() {
 
       { navigation.map((item) => (
           <MyCustomSection key={item.name} id={item.id} className={' min-h-[calc(100vh-74px)] w-screen pt-20'}>
-            {item.name}
             {componentMap.get(item.name)}
           </MyCustomSection>
         ))}
-      {/* <Home />
-      <About />
-      <Services /> */}
 
       {/* <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a

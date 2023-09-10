@@ -24,7 +24,7 @@ export const TESTIMONIALS_KEY = 'Testimonials';
 export const PORTFOLIO_KEY = 'Portfolio';
 export const CONTACT_KEY = 'Contact';
 
-export const navigation: Navigation[] = [HOME_KEY, ABOUT_KEY, SERVICES_KEY, TESTIMONIALS_KEY, PORTFOLIO_KEY, CONTACT_KEY].map(s => new Navigation(s))
+export const navigation: Navigation[] = [HOME_KEY, ABOUT_KEY, SERVICES_KEY , PORTFOLIO_KEY, TESTIMONIALS_KEY, CONTACT_KEY].map(s => new Navigation(s))
 
 export const componentMap = new Map();
 componentMap.set(HOME_KEY, Home())

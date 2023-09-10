@@ -1,17 +1,18 @@
+import SectionHeading from '@/components/section-heading'
 import Image from 'next/image'
+
+const title = "Our Team";
+const subTitle = "Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably havent heard of them.";
 
 export function About(){
     return (
         <div className="container px-5 py-50 mx-auto text-gray-600 body-font">
-               <div className="flex flex-col text-center w-full mb-20">
-      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Team</h1>
-      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably havent heard of them.</p>
-    </div>
+          <SectionHeading title={title} subTitle={subTitle} />
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
             <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
               <div className="rounded-lg h-100 overflow-hidden">
                 <Image width={1000}
-                       height={800} 
+                        height={800} 
                         alt="content" 
                         className="object-cover object-center h-full w-full" 
                         src="https://source.unsplash.com/3TLl_97HNJo" />

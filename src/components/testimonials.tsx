@@ -1,3 +1,4 @@
+import SectionHeading from '@/components/section-heading'
 import Image from 'next/image'
 
 export function Testimonials(){
@@ -5,6 +6,7 @@ export function Testimonials(){
     
 <div className="text-gray-600 body-font">
     <div className="container px-5 py-24 mx-auto">
+      <SectionHeading title='Testimonials' subTitle='Some testimonials below'/>
         <div className="flex flex-wrap -m-4">
             <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
                 <div className="h-full text-center">

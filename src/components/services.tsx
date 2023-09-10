@@ -1,40 +1,5 @@
-interface Stat {
-    viewId: number;
-    amount: string;
-    title: string;
-}
-
-const stats: Stat[] = [
-    { viewId: 0, amount: "2500", title: "Happy Clients"},
-    { viewId: 1, amount: "300", title: "Full Notebooks"},
-    { viewId: 2, amount: "120", title: "Teammates"},
-    { viewId: 3, amount: "30", title: "Stores"},
-]
-
-const Statistics = () => {
-    return (
-        <>
-        { stats.map((item) => (
-            <div key={item.viewId} className="p-4 sm:w-1/4 w-1/2">
-                <h2 className=" text-pink-500 title-font font-medium sm:text-4xl text-3xl text-gray-900">{item.amount}</h2>
-                <p className="leading-relaxed">{item.title}</p>
-            </div>
-        ))}
-        </>
-    )
-}
-
-export function StatisticsContainer(){
-    return (
-        <div className="text-gray-600 body-font bg-pink-100 py-10">
-            <div className="container px-5 py-2 mx-auto">
-                <div className="flex flex-wrap -m-4 text-center text-pink-500">
-                    <Statistics />
-                </div>
-            </div>
-        </div>
-    )
-}
+import SectionHeading from "@/components/section-heading";
+import { StatisticsContainer } from "@/components/statistics";
 
 export function Services(){
     return (
@@ -42,13 +7,7 @@ export function Services(){
         <StatisticsContainer />
 <div className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto">
-    <div className="text-center mb-20">
-      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Services</h1>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
-      <div className="flex mt-6 justify-center">
-        <div className="w-16 h-1 rounded-full bg-pink-500 inline-flex"></div>
-      </div>
-    </div>
+    <SectionHeading title="Services" subTitle="Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug."/>
     <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
       <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
         <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-pink-100 text-pink-500 mb-5 flex-shrink-0">
