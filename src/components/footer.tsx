@@ -41,8 +41,8 @@ const svgArray = [FacebookSVG, TwitterSVG ,InstagramSVG, LinkedInSVG]
 const SocialMedia = () => {
     return (
         <>
-        { svgArray.map((item) => (
-            <Link key="item" className="ml-3 text-gray-500" href={""}>
+        { svgArray.map((item, index) => (
+            <Link key={index} className="ml-3 text-gray-500" href={""}>
                 { item() }
             </Link>
         ))}

@@ -27,9 +27,9 @@ export const CONTACT_KEY = 'Contact';
 export const navigation: Navigation[] = [HOME_KEY, ABOUT_KEY, SERVICES_KEY , PORTFOLIO_KEY, TESTIMONIALS_KEY, CONTACT_KEY].map(s => new Navigation(s))
 
 export const componentMap = new Map();
-componentMap.set(HOME_KEY, Home())
-componentMap.set(ABOUT_KEY, About())
-componentMap.set(SERVICES_KEY, Services())
-componentMap.set(TESTIMONIALS_KEY, Testimonials())
-componentMap.set(PORTFOLIO_KEY, Portfolio())
-componentMap.set(CONTACT_KEY, Contact())
+componentMap.set(HOME_KEY, <Home/>)
+componentMap.set(ABOUT_KEY, <About />)
+componentMap.set(SERVICES_KEY, <Services />)
+componentMap.set(TESTIMONIALS_KEY, <Testimonials />)
+componentMap.set(PORTFOLIO_KEY, <Portfolio/>)
+componentMap.set(CONTACT_KEY, <Contact />)

@@ -1,19 +1,45 @@
+"use client"
+import { useEffect, useState } from "react";
+
 interface Stat {
     amount: string;
     title: string;
 }
 
-const stats: Stat[] = [
+const initialStats: Stat[] = [
     { amount: "2500", title: "Happy Clients"},
     { amount: "300", title: "Full Notebooks"},
     { amount: "120", title: "Teammates"},
     { amount: "30", title: "Stores"},
 ]
 
+//TODO TL cleanup
 const Statistics = () => {
+    const [statistics, setStatistics] = useState(initialStats);
+
+    
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            // console.log("running ")
+            const increment = Math.floor(Math.random() * 10) + 1
+            const updated: Stat[] = [
+                { amount: (+statistics[0].amount + increment).toString(), title: "Happy Clients"},
+                { amount: (+statistics[1].amount + increment).toString(), title: "Full Notebooks"},
+                { amount: (+statistics[2].amount + increment).toString(), title: "Teammates"},
+                { amount: (+statistics[3].amount + increment).toString(), title: "Stores"},
+            ]
+            // console.log(updated);
+            setStatistics(updated)
+
+        }, 5000);
+    
+        return () => clearInterval(interval);
+        }, [statistics]);
+    
     return (
         <>
-        { stats.map((item, index) => (
+        { statistics.map((item, index) => (
             <div key={index} className="p-4 sm:w-1/4 w-1/2">
                 <h2 className=" text-pink-500 title-font font-medium sm:text-4xl text-3xl text-gray-900">{item.amount}</h2>
                 <p className="leading-relaxed">{item.title}</p>

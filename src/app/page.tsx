@@ -4,6 +4,7 @@ import { MyCustomSection } from '@/components/section'
 import MainStyles from '@/app/page.module.scss'
 import { componentMap, navigation } from '@/app/models/navigation'
 
+
 export default function Page() {
   return (
     <main className={MainStyles.main}>
