@@ -1,12 +1,15 @@
 import SectionHeading from '@/components/section-heading'
 import Image from 'next/image'
 
+const title = "Testimonials";
+const subTitle = "Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.";
+
 export function Testimonials(){
     return (
     
 <div className="text-gray-600 body-font">
     <div className="container px-5 py-24 mx-auto">
-      <SectionHeading title='Testimonials' subTitle='Some testimonials below'/>
+      <SectionHeading title={title} subTitle={subTitle}/>
         <div className="flex flex-wrap -m-4">
             <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
                 <div className="h-full text-center">

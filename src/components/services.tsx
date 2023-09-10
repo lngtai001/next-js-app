@@ -1,14 +1,17 @@
 import SectionHeading from "@/components/section-heading";
 import { StatisticsContainer } from "@/components/statistics";
 
+const title = "Services";
+const subTitle = "Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.";
+
 export function Services(){
     return (
         <>
-        <StatisticsContainer />
-<div className="text-gray-600 body-font">
-  <div className="container px-5 py-24 mx-auto">
-    <SectionHeading title="Services" subTitle="Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug."/>
-    <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+          <StatisticsContainer />
+          <div className="text-gray-600 body-font">
+            <div className="container px-5 py-24 mx-auto">
+              <SectionHeading title={title} subTitle={subTitle}/>
+               <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
       <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
         <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-pink-100 text-pink-500 mb-5 flex-shrink-0">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-10 h-10" viewBox="0 0 24 24">
