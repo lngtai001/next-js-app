@@ -1,6 +1,6 @@
 import Logo from "@/components/logo";
-import Link from "next/link";
-import { FaFacebook, FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import { MdEmail, MdPhone } from "react-icons/md"
 
 function Bottom() {
     return (
@@ -24,68 +24,55 @@ export default function Footer() {
         <footer className="text-gray-600 body-font bg-pink-50">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-wrap md:text-left text-center order-first">
-              <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <div className="lg:w-1/5 md:w-1/2 w-full px-4 lg:px-10">
                 <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CONTENT</h2>
                 <nav className="list-none mb-10">
-                  <li>
-                    <Link className="text-gray-600 hover:text-gray-800" href="">First Link</Link>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                  </li>
+                  <div className="text-gray-600 flex flex-wrap justify-center">
+                      Lorem ipsume dkgnkejgnoweiienk nklsnkjajgr
+                  </div>
                 </nav>
               </div>
-              <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <div className="lg:w-1/5 md:w-1/2 w-full px-4 lg:px-10">
                 <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">INFORMATION</h2>
                 <nav className="list-none mb-10">
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                  </li>
+                  <div className="text-gray-600 flex flex-wrap justify-center">
+                      Lorem ipsume dkgnkejgnoweiienk nklsnkjajgr
+                  </div>
                 </nav>
               </div>
-              <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <div className="lg:w-1/5 md:w-1/2 w-full px-4 lg:px-10">
                 <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">LEGAL</h2>
                 <nav className="list-none mb-10">
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                  </li>
-                  <li>
-                    <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                  </li>
+                  <div className="text-gray-600 flex flex-wrap justify-center">
+                      Lorem ipsume dkgnkejgnoweiienk nklsnkjajgr
+                  </div>
                 </nav>
               </div>
-              <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                {/* <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2> */}
+              <div className="lg:w-1/5 md:w-1/2 w-full px-4 lg:px-10">
+                <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">HELP</h2>
+                <nav className="list-none mb-10">
+                  <div className="text-gray-600 flex flex-wrap justify-center">
+                      Lorem ipsume dkgnkejgnoweiienk nklsnkjajgr
+                  </div>
+                </nav>
+              </div>
+              <div className="lg:w-1/5 md:w-1/2 w-full px-4 lg:px-10">
                 <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
-                  {/* <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2"> */}
-                    {/* <label for="footer-field" className="leading-7 text-sm text-gray-600">Placeholder</label>
-                    <input type="text" id="footer-field" name="footer-field" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-pink-200 focus:border-pink-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"> */}
-                  {/* </div> */}
-                  <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded">Button</button>
+                  <div className="inline-flex items-center">
+                    <span className="flex-grow flex flex-col">
+                    <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+                    <span className="flex items-center gap-1">
+                      <MdEmail opacity-70/>
+                      <a className="text-pink-500 leading-relaxed">example@email.com</a>
+                    </span>
+                    <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+                    <span className="flex items-center gap-1 ">
+                      <MdPhone opacity-70/>
+                      <p className="leading-relaxed">123-456-7890</p>
+                    </span>
+                    </span>
+                  </div>
                 </div>
-                <p className="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
-                </p>
               </div>
             </div>
           </div>
