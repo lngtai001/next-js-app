@@ -1,6 +1,42 @@
 import Logo from "@/components/logo";
-import { FaFacebookF, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import { ReactNode } from "react";
+import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { MdEmail, MdPhone } from "react-icons/md"
+
+
+const infoSections = [
+  { title: "CONTENT", text: "et commodo. Duis non ante elementum, interdum lorem eget, ultrices felis. reet commodo. "},
+  { title: "INFORMATION", text: "Phasellus eros tortor, facilisis non diam id, gravida maximus sem"},
+  { title: "LEGAL", text: "Sed vel tortor in dolor pharetr Duis non ante elementum, interdum lorem eget, ultrices felis."},
+  { title: "HELP", text: " consectetur, risus nunc congue nulla, in interdum sapie"},
+]
+
+interface Props {
+  children: ReactNode
+}
+
+export const FooterSectionWrapper: React.FC<Props> = ( { children } ) => (
+  <div className="lg:w-1/5 md:w-1/2 w-full px-4 lg:px-10">
+      { children }
+  </div>
+  );
+
+function InfoSections() {
+  return (
+    infoSections.map(item => (
+      <FooterSectionWrapper key={item.title}>
+        <>
+      <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">{item.title}</h2>
+      <nav className="list-none mb-10">
+        <div className="text-gray-600 flex flex-wrap justify-center">
+          {item.text}
+        </div>
+      </nav>
+      </>
+      </FooterSectionWrapper>
+    ))
+  )
+}
 
 function Bottom() {
     return (
@@ -19,43 +55,14 @@ function Bottom() {
     )
 }
 
+
+
 export default function Footer() {
     return (
         <footer className="text-gray-600 body-font bg-pink-50">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-wrap md:text-left text-center order-first">
-              <div className="lg:w-1/5 md:w-1/2 w-full px-4 lg:px-10">
-                <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CONTENT</h2>
-                <nav className="list-none mb-10">
-                  <div className="text-gray-600 flex flex-wrap justify-center">
-                      Lorem ipsume dkgnkejgnoweiienk nklsnkjajgr
-                  </div>
-                </nav>
-              </div>
-              <div className="lg:w-1/5 md:w-1/2 w-full px-4 lg:px-10">
-                <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">INFORMATION</h2>
-                <nav className="list-none mb-10">
-                  <div className="text-gray-600 flex flex-wrap justify-center">
-                      Lorem ipsume dkgnkejgnoweiienk nklsnkjajgr
-                  </div>
-                </nav>
-              </div>
-              <div className="lg:w-1/5 md:w-1/2 w-full px-4 lg:px-10">
-                <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">LEGAL</h2>
-                <nav className="list-none mb-10">
-                  <div className="text-gray-600 flex flex-wrap justify-center">
-                      Lorem ipsume dkgnkejgnoweiienk nklsnkjajgr
-                  </div>
-                </nav>
-              </div>
-              <div className="lg:w-1/5 md:w-1/2 w-full px-4 lg:px-10">
-                <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">HELP</h2>
-                <nav className="list-none mb-10">
-                  <div className="text-gray-600 flex flex-wrap justify-center">
-                      Lorem ipsume dkgnkejgnoweiienk nklsnkjajgr
-                  </div>
-                </nav>
-              </div>
+              <InfoSections />
               <div className="lg:w-1/5 md:w-1/2 w-full px-4 lg:px-10">
                 <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
                   <div className="inline-flex items-center">
