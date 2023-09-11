@@ -3,7 +3,7 @@ import { FaPaperPlane } from "react-icons/fa";
 
 export default function SubmitButton() {
     const { pending, data } =  useFormStatus();
-    console.log("form data: ", data)
+    // console.log("form data: ", data)
 
     let comp
     if (pending){

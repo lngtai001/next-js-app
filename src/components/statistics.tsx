@@ -17,8 +17,6 @@ const initialStats: Stat[] = [
 const Statistics = () => {
     const [statistics, setStatistics] = useState(initialStats);
 
-    
-
     useEffect(() => {
         const interval = setInterval(() => {
             // console.log("running ")
@@ -40,7 +38,7 @@ const Statistics = () => {
     return (
         <>
         { statistics.map((item, index) => (
-            <div key={index} className="p-4 sm:w-1/4 w-1/2">
+            <div key={index} className="animate-pulse p-4 sm:w-1/4 w-1/2">
                 <h2 className=" text-pink-500 title-font font-medium sm:text-4xl text-3xl text-gray-900">{item.amount}</h2>
                 <p className="leading-relaxed">{item.title}</p>
             </div>
