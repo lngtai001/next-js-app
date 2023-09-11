@@ -55,15 +55,13 @@ function Bottom() {
     )
 }
 
-
-
 export default function Footer() {
     return (
         <footer className="text-gray-600 body-font bg-pink-50">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-wrap md:text-left text-center order-first">
               <InfoSections />
-              <div className="lg:w-1/5 md:w-1/2 w-full px-4 lg:px-10">
+                <FooterSectionWrapper>
                 <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
                   <div className="inline-flex items-center">
                     <span className="flex-grow flex flex-col">
@@ -80,7 +78,7 @@ export default function Footer() {
                     </span>
                   </div>
                 </div>
-              </div>
+                </FooterSectionWrapper>
             </div>
           </div>
         <Bottom />
