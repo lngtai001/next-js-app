@@ -67,12 +67,12 @@ export default function Footer() {
                     <span className="flex-grow flex flex-col">
                     <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
                     <span className="flex items-center gap-1">
-                      <MdEmail opacity-70/>
+                      <MdEmail className="opacity-70"/>
                       <a className="text-pink-500 leading-relaxed">example@email.com</a>
                     </span>
                     <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-                    <span className="flex items-center gap-1 ">
-                      <MdPhone opacity-70/>
+                    <span className="flex items-center gap-1 justify-center md:justify-start">
+                      <MdPhone className="opacity-70"/>
                       <p className="leading-relaxed">123-456-7890</p>
                     </span>
                     </span>
