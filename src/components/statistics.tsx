@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
 
-interface Stat {
+type Stat = {
     amount: string;
     title: string;
 }
@@ -37,8 +37,8 @@ const Statistics = () => {
     
     return (
         <>
-        { statistics.map((item, index) => (
-            <div key={index} className="animate-pulse p-4 sm:w-1/4 w-1/2">
+        { statistics.map((item) => (
+            <div key={item.title} className="animate-pulse p-4 sm:w-1/4 w-1/2">
                 <h2 className=" text-pink-500 title-font font-medium sm:text-4xl text-3xl text-gray-900">{item.amount}</h2>
                 <p className="leading-relaxed">{item.title}</p>
             </div>
