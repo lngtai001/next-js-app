@@ -3,13 +3,10 @@ import { SomeButtons }from '@/components/button'
 import { MyCustomSection } from '@/components/section'
 import MainStyles from '@/app/page.module.scss'
 import { componentMap, navigation } from '@/app/models/navigation'
-import { Unsplash } from '@/components/photo'
-
 
 export default function Page() {
   return (
     <main className={MainStyles.main}>
-      {/* <Unsplash></Unsplash> */}
       {/* <h1 style={{ color: variables.primaryColor }} className='text-lg'>Hello, Next.js!</h1>
       <SomeButtons /> */}
 

@@ -20,7 +20,6 @@ return (
             }}
           />
         </div>
-        {/* <div>Company name / logo should go here </div> */}
     <NavBar />
           <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"

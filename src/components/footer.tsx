@@ -3,15 +3,22 @@ import { ReactNode } from "react";
 import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { MdEmail, MdPhone } from "react-icons/md"
 
+type InfoSection = {
+  title: string;
+  text: string;
+}
 
-const infoSections = [
+const infoSections: InfoSection[] = [
   { title: "CONTENT", text: "et commodo. Duis non ante elementum, interdum lorem eget, ultrices felis. reet commodo. "},
   { title: "INFORMATION", text: "Phasellus eros tortor, facilisis non diam id, gravida maximus sem"},
   { title: "LEGAL", text: "Sed vel tortor in dolor pharetr Duis non ante elementum, interdum lorem eget, ultrices felis."},
   { title: "HELP", text: " consectetur, risus nunc congue nulla, in interdum sapie"},
 ]
 
-interface Props {
+const email = {key: "EMAIL", value: "example@email.com"}
+const phone = {key: "PHONE", value: "123-456-7890" }
+
+type Props = {
   children: ReactNode
 }
 
@@ -65,16 +72,16 @@ export default function Footer() {
                 <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
                   <div className="inline-flex items-center">
                     <span className="flex-grow flex flex-col">
-                    <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-                    <span className="flex items-center gap-1">
-                      <MdEmail className="opacity-70"/>
-                      <a className="text-pink-500 leading-relaxed">example@email.com</a>
-                    </span>
-                    <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-                    <span className="flex items-center gap-1 justify-center md:justify-start">
-                      <MdPhone className="opacity-70"/>
-                      <p className="leading-relaxed">123-456-7890</p>
-                    </span>
+                      <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">{email.key}</h2>
+                        <span className="flex items-center gap-1">
+                          <MdEmail className="opacity-70"/>
+                          <a className="text-pink-500 leading-relaxed">{email.value}</a>
+                        </span>
+                      <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">{phone.key}</h2>
+                        <span className="flex items-center gap-1 justify-center md:justify-start">
+                          <MdPhone className="opacity-70"/>
+                          <p className="leading-relaxed">{phone.value}</p>
+                        </span>
                     </span>
                   </div>
                 </div>
