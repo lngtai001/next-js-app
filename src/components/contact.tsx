@@ -18,7 +18,7 @@ const CustomInput: React.FC<InputProps> = function({ label, componentType }: Inp
   
   if(componentType == "input"){
     component = <input type="text" id={lower} name={lower} className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-  } else if(componentType = "textarea"){
+  } else if(componentType == "textarea"){
     component = <textarea id={lower} name={lower} className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-pink-500 focus:bg-white focus:ring-2 focus:ring-pink-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
   }
   return (
